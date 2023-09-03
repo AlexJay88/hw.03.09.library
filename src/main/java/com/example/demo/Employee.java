@@ -5,7 +5,6 @@ import java.util.Objects;
 public class Employee {
     private String firstName;
     private String lastName;
-
     private final Integer salary;
 
     private final Integer department;

@@ -40,3 +40,4 @@ public class DepartmentServiceImpl implements DepartmentService{
                 .collect(Collectors.groupingBy(Employee::getDepartment));
     }
 }
+

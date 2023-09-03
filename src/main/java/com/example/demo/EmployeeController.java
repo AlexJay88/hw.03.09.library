@@ -18,8 +18,7 @@ public class EmployeeController {
 @GetMapping("/add")
     public Employee addEmployee                   (@RequestParam String firstName,
                                                    @RequestParam String lastName,
-                                                   @RequestParam  Integer salary,
-                                                   @RequestParam Integer department)
+                                                   @RequestParam  Integer salary, @RequestParam Integer department)
     {
         EmployeeNameValidator.validateIsAlpha(firstName,lastName);
         return employeeService.addEmployee(firstName, lastName,salary,department);
